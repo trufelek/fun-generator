@@ -1,0 +1,49 @@
+/* general styles */
+body {
+    background: url('../img/background.jpg') repeat;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background: #7b3239;
+    color: #f37276;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* main content */
+.main {
+    min-height: calc(100vh - 100px);
+}
+
+.main .categories-list {
+    display: flex;
+}
+
+/* footer */
+footer {
+    background: #7b3239;
+    color: #fff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

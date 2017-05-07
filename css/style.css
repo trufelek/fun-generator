@@ -234,7 +234,7 @@ video{
     cursor: pointer;
 }
 
-.funny_movies .box{
+.funny_movies .box, .funny_pictures .box{
     margin-top:10px;
     margin-bottom:10px;
 }
@@ -246,6 +246,10 @@ video{
 
 .prev{
     margin-right:15px;
+}
+
+.funnypic{
+    width:100%;
 }
 
 /* footer */

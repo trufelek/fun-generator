@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+    <title>Generator frajdy</title>
+
+    <!-- styles -->
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- libraries -->
+    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+    <a id="logo" href="/generator/index.html" class="logo">GF</a>
+    <nav>
+        <!--todo: pokaż/ukryj ikonki w zależności od tego czy użytkownik jest zalogowany-->
+        <a id="settings-link" href="/generator/settings.html" class="settings-link"><i class="fa fa-cog" aria-hidden="true"></i></a>
+        <a id="login-link" href="/generator/login.html" class="login-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+        <a id="logout-link" href="/logout" class="logout-link"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+    </nav>
+</header>
+
+<section class="main tickle">
+    <div class="box">
+        <h2>Łaskotnik</h2>
+        <div class="controls">
+            <ul class="controls-list">
+                <li><button id="tickle-start" class="tickle-btn action"><i class="fa fa-play" aria-hidden="true"></i></button></li>
+                <li><button id="tickle-stop" class="tickle-btn action"><i class="fa fa-stop" aria-hidden="true"></i></button></li>
+                <li><button id="tickle-fast" class="tickle-btn">Szybko</button></li>
+                <li><button id="tickle-medium" class="tickle-btn">Standard</button></li>
+                <li><button id="tickle-slow" class="tickle-btn">Wolno</button></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>Projektowanie Interfejsów. Grupa 1</p>
+    <p>Małgorzata Olak, Krzysztof Niedzielski, Aleksandra Wierzbiak</p>
+</footer>
+</body>
+</html>

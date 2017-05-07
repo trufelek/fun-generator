@@ -15,7 +15,7 @@ body {
 }
 
 .nodisplay{
-    display: none !important;
+    display: none;
 }
 
 .disabled {
@@ -250,6 +250,18 @@ header .logo {
     padding: 25px;
     margin: 0 auto;
     max-width: 70%;
+}
+
+/* tickle */
+.controls-list {
+    display: flex;
+}
+
+.controls-list li button{
+    border-radius: 100%;
+    margin: 0 15px;
+    height: 85px;
+    width: 85px;
 }
 
 /* bubble wrap */

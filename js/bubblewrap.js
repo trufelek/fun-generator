@@ -8,6 +8,7 @@ $(function() {
         }
 
         if(bubblewrap_amount == 0) {
+            console.log('aa');
             $('#get_wrap').addClass('disabled');
             $('#bubblewrap_alert').fadeIn();
         }

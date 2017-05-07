@@ -3,21 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-        <title>Generator frajdy - Śmieszne obrazki</title>
+        <title>Generator frajdy - logowanie</title>
 
         <!-- styles -->
-        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Quattrocento+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/slick.css">
-        <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <!-- libraries -->
         <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/lib/slick.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.validate.min.js"></script>
 
         <!-- scripts -->
-        <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/login.js"></script>
     </head>
     <body>
     <header>
@@ -30,15 +28,16 @@
         </nav>
     </header>
 
-    <section class="main funny_pictures">
+    <section class="main forget">
         <div class="box">
-            <h2>Śmieszne obrazki</h2>
-
-            <div id="images-slider" class="slider images-slider">
-                <div class="image-slide"><img alt="funnypicture" class="funnypic" src="img/funnypic/funnycat.jpg"></div>
-                <div class="image-slide"><img alt="funnypicture" class="funnypic" src="img/funnypic/pugs.jpg"></div>
-                <div class="image-slide"><img alt="funnypicture" class="funnypic" src="img/funnypic/doge.jpg"></div>
-            </div>
+            <h2>Przypomnienie hasła</h2>
+            <!--todo: pokaż powiadomienie jeśli wystąpi błąd logowania-->
+            <label id="forget-validation-error" class="validation-error"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Konto z podanym adresem e-mail nie istnieje.</label>
+            <form id="forget-form" class="forget-form">
+                <p>Podaj adres e-mail. Zostanie na niego wysłany link do resetowania hasła.</p>
+                <input type="email" id="forget-email" name="email" placeholder="E-mail">
+                <button id="forget-btn" class="button" type="submit">Wyślij</button>
+            </form>
         </div>
     </section>
 

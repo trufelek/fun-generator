@@ -10,6 +10,8 @@ body {
 
 * {
     box-sizing: border-box;
+    min-height: 0;
+    min-width: 0;
 }
 
 .nodisplay{
@@ -47,6 +49,7 @@ ul {
 }
 
 h2 {
+    margin-top: 0;
     text-align: center;
 }
 
@@ -173,6 +176,7 @@ header .logo {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 25px;
 }
 
 .main .categories-list {
@@ -208,8 +212,10 @@ header .logo {
 }
 
 .main .box {
-    background: rgba(123, 50, 57, 0.9);
+    background: rgba(0, 0, 0, 0.7);
     padding: 25px;
+    margin: 0 auto;
+    max-width: 70%;
 }
 
 /* bubble wrap */
@@ -220,36 +226,43 @@ header .logo {
 }
 
 .funnty_pictures img {
+    height: 100px;
+    width: 100px;
+}
+
+.funny_movies .video {
+    margin: auto;
     max-width: 100%;
 }
 
-video{
-    height: auto;
-    width: auto;
-    max-width: 100%;
-
-}
-
-.funny_movies button{
+.funny_movies button {
     cursor: pointer;
 }
 
-.funny_movies .box, .funny_pictures .box{
-    margin-top:10px;
-    margin-bottom:10px;
+.funny_movies .box, .funny_pictures .box {
+    padding: 25px 60px 35px;
 }
 
-.navigate {
-    margin-top:10px;
-    text-align: center;
+.funnypic {
+    width: 100%;
 }
 
-.prev{
-    margin-right:15px;
+.slick-prev, .slick-next {
+    height: 40px;
+    width: 40px;
 }
 
-.funnypic{
-    width:100%;
+.slick-next {
+    right: -50px;
+}
+
+.slick-prev {
+    left: -50px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 40px;
+    color: #aacd00;
 }
 
 /* footer */

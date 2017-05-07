@@ -152,8 +152,22 @@ video{
     
 }
 
+.funny_movies button{
+    cursor: pointer;
+}
+
+.funny_movies .box{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
 .navigate{
+    margin-top:10px;
     text-align: center;
+}
+
+.prev{
+    margin-right:15px;
 }
 
 

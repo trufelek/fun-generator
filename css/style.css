@@ -13,7 +13,12 @@ body {
 }
 
 .nodisplay{
-    display: none;
+    display: none !important;
+}
+
+.disabled {
+    background: #888888 !important;
+    pointer-events: none !important;
 }
 
 a {
@@ -70,11 +75,6 @@ button.action {
 
 button.action:hover {
     background: #ff5e00;
-}
-
-button.disabled {
-    background: #888888;
-    pointer-events: none;
 }
 
 input {

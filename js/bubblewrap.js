@@ -20,6 +20,10 @@ $(function() {
         $('#bubblewrap_alert').fadeOut();
     }
 
+    if(bubblewrap_amount == 0 && $('#bubblewrap_cat').length) {
+        $('#bubblewrap_cat').addClass('disabled');
+    }
+
     $('#get_wrap').on('click', getWrap);
     $('#empty_wrap').on('click', loadWrap);
 });

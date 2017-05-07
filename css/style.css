@@ -48,6 +48,10 @@ ul {
     padding: 0;
 }
 
+ul.two-columns {
+    column-count: 2;
+}
+
 h2 {
     margin-top: 0;
     text-align: center;
@@ -80,6 +84,23 @@ button.action:hover {
     background: #ff5e00;
 }
 
+select {
+    height: 32px;
+    width: 100%;
+}
+
+.fieldset {
+    border-bottom: 1px solid #ff8d00;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.fieldset:last-child {
+    border-bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
 input {
     border: 0;
     outline: 0;
@@ -88,6 +109,19 @@ input {
     margin: 15px 0;
     padding: 0 5px;
     width: 100%;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"] + label {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
 }
 
 input:focus {
@@ -225,11 +259,13 @@ header .logo {
     padding: 10px;
 }
 
+/* images */
 .funnty_pictures img {
     height: 100px;
     width: 100px;
 }
 
+/* videos */
 .funny_movies .video {
     margin: auto;
     max-width: 100%;
@@ -247,6 +283,7 @@ header .logo {
     width: 100%;
 }
 
+/* slick slider */
 .slick-prev, .slick-next {
     height: 40px;
     width: 40px;

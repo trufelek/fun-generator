@@ -19,7 +19,7 @@ $(function() {
                 minlength: "Hasło musi mieć co najmniej 6 znaków"
             },
             password2: {
-                required: "Podaj hasło",
+                required: "Powtórz hasło",
                 minlength: "Hasło musi mieć co najmniej 6 znaków",
                 equalTo: "Hasła muszą się zgadzać."
             }

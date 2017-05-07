@@ -287,7 +287,7 @@ header .logo {
     cursor: pointer;
 }
 
-.funny_movies .box, .funny_pictures .box {
+.funny_movies .box, .funny_pictures .box, .jokes .box {
     padding: 25px 60px 35px;
 }
 

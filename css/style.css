@@ -1,7 +1,7 @@
 /* general styles */
 body {
     background: url('../img/background.jpg') repeat;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
@@ -10,6 +10,10 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+.nodisplay{
+    display: none;
 }
 
 a {
@@ -60,6 +64,19 @@ button:hover {
     background: #85a000;
 }
 
+button.action {
+    background: #ff8d00;
+}
+
+button.action:hover {
+    background: #ff5e00;
+}
+
+button.disabled {
+    background: #888888;
+    pointer-events: none;
+}
+
 input {
     border: 0;
     outline: 0;
@@ -100,9 +117,14 @@ label.error:before {
     left: 10px;
 }
 
-label.validation-error {
+label.validation-error, label.alert {
     display: block;
+    margin: 10px 0;
     color: #ff8d00;
+}
+
+label.validation-error i, label.alert i {
+    margin-right: 5px;
 }
 
 /* header */
@@ -188,6 +210,28 @@ header .logo {
 .main .box {
     background: rgba(123, 50, 57, 0.9);
     padding: 25px;
+}
+
+/* bubble wrap */
+.bubblewrap ul {
+    list-style-type: initial;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.funnty_pictures img {
+    max-width: 100%;
+}
+
+video{
+    height: auto;
+    width: auto;
+    max-width: 100%;
+
+}
+
+.navigate {
+    text-align: center;
 }
 
 /* footer */

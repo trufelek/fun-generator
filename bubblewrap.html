@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-        <title>Generator frajdy</title>
+        <title>Generator frajdy - Folia bąbelkowa</title>
 
         <!-- styles -->
         <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato" rel="stylesheet">
@@ -12,7 +12,6 @@
 
         <!-- libraries -->
         <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
-        <script type="text/javascript" src="js/lib/jquery.validate.min.js"></script>
 
         <!-- scripts -->
         <script type="text/javascript" src="js/bubblewrap.js"></script>
@@ -28,16 +27,24 @@
             </nav>
         </header>
 
-        <section class="main homepage">
-            <h1>Generator Frajdy</h1>
-            <div class="categories">
-                <ul class="categories-list">
-                    <li><a href="/jokes"><span>Dowcipy</span></a></li>
-                    <li><a href="/images"><span>Obrazki</span></a></li>
-                    <li><a href="/videos"><span>Filmy</span></a></li>
-                    <li><a href="/tickle"><span>Łaskotnik</span></a></li>
-                    <li><a href="/generator/bubblewrap.html"><span>Folia bąbelkowa</span></a></li>
+        <section class="main bubblewrap">
+            <div class="box">
+                <h2>Folia Bąbelkowa</h2>
+                <p>By wziąć folię z podajnika, naciśnij przycisk <i>Pobierz folię</i>.</p>
+                <p>Oto kilka pomysłów co możesz zrobić ze swoją folią bąbelkową:</p>
+                <ul>
+                    <li>Wypstrykaj wszystkie bąbelki</li>
+                    <li>Obkręć nią piłkę i uderzaj mocno o ścianę</li>
+                    <li>Spróbuj podłożyć ją komuś pod siedzisko</li>
+                    <li>Jeśli czujesz się w niebezpieczeństwie użyj jej więcej i zrób bąbelkowy kocyk</li>
+                    <li>Jeśli czujesz, że Ci zimno - otul się folią bąbelkową!</li>
                 </ul>
+                <p>Ilość folii w podajniku: <span id="wrap_amount">3</span></p>
+                <button id="get_wrap">Pobierz folię</button>
+                <div id="bubblewrap_alert" class="nodisplay">
+                    <label class="alert"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Brak folii w podajniku!</label>
+                    <button id="empty_wrap" class="action">Załaduj podajnik</button>
+                </div>
             </div>
         </section>
 

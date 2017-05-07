@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-    <title>Generator frajdy - logowanie</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+        <title>Generator frajdy - logowanie</title>
 
-    <!-- styles -->
-    <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Quattrocento+Sans" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- styles -->
+        <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Quattrocento+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- libraries -->
-    <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/lib/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/login.js"></script>
+        <!-- libraries -->
+        <script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/lib/jquery.validate.min.js"></script>
 
-</head>
-<body>
-<header>
-    <a href="/generator/index.html" class="logo">GF</a>
-    <nav>
-        <!--todo: pokaż/ukryj ikonki w zależności od tego czy użytkownik jest zalogowany-->
-        <a href="/generator/settings.html" class="settings-link"><i class="fa fa-cog" aria-hidden="true"></i></a>
-        <a href="/generator/login.html" class="login-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
-        <a href="/logout" class="logout-link"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
-    </nav>
-</header>
-<section class="main login">
-    <div class="box">
-        <h2>Logowanie</h2>
-        <!--todo: pokaż powiadomienie jeśli wystąpi błąd logowania-->
-        <label class="validation-error"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Błąd w logowaniu. Niepoprawny login lub hasło.</label>
-        <form id="login-form" class="login-form">
-            <input type="text" id="login-nick" name="nick" placeholder="Nick">
-            <input type="text" id="login-password" name="password" placeholder="Hasło" minlength="6">
-            <button class="button" type="submit">Zaloguj</button>
-        </form>
-        <p>Nie masz konta? <a href="/generator/registration.html"><strong>Zarejestruj się!</strong></a></p>
-    </div>
-</section>
-<footer>
-    <p>Projektowanie Interfejsów. Grupa 1</p>
-    <p>Małgorzata Olak, Krzysztof Niedzielski, Aleksandra Wierzbiak</p>
-</footer>
-</body>
+        <!-- scripts -->
+        <script type="text/javascript" src="js/login.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="/generator/index.html" class="logo">GF</a>
+            <nav>
+                <!--todo: pokaż/ukryj ikonki w zależności od tego czy użytkownik jest zalogowany-->
+                <a href="/generator/settings.html" class="settings-link"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                <a href="/generator/login.html" class="login-link"><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                <a href="/logout" class="logout-link"><i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            </nav>
+        </header>
+
+        <section class="main login">
+            <div class="box">
+                <h2>Logowanie</h2>
+                <!--todo: pokaż powiadomienie jeśli wystąpi błąd logowania-->
+                <label class="validation-error"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Błąd w logowaniu. Niepoprawny login lub hasło.</label>
+                <form id="login-form" class="login-form">
+                    <input type="text" id="login-nick" name="nick" placeholder="Nick">
+                    <input type="text" id="login-password" name="password" placeholder="Hasło" minlength="6">
+                    <button class="button" type="submit">Zaloguj</button>
+                </form>
+                <p>Nie masz konta? <a href="/generator/registration.html"><strong>Zarejestruj się!</strong></a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Projektowanie Interfejsów. Grupa 1</p>
+            <p>Małgorzata Olak, Krzysztof Niedzielski, Aleksandra Wierzbiak</p>
+        </footer>
+    </body>
 </html>
